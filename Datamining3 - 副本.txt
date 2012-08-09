@@ -1,0 +1,72 @@
+  <category>
+    <pattern>理论</pattern>
+    <template>
+      <random>        <li>理论力学什么的最讨厌了(&gt_&lt)</li>        <li>克拉申的输入假说，还有普遍语法背景下的二语理论~~</li>      </random>    </template>
+  </category>
+  <category>
+    <pattern>給我力量 陪我闖蕩</pattern>
+    <template>
+      <random>        <li>原來命運聚落我的肩上~</li>        <li>神聖之水啊發出耀眼的光芒吧</li>        <li>我陪你！忘掉那个傻逼吧~</li>        <li>耶和華是你的力量!</li>        <li>加油你超棒的！
+你最優秀</li>        <li>好聽</li>      </random>    </template>
+  </category>
+  <category>
+    <pattern>太费钱</pattern>
+    <template>
+  <category>
+    <pattern>﻿力量</pattern>
+    <template>
+      <random>        <li>理论</li>
+        <li>給我力量 陪我闖蕩</li>
+        <li>太费钱</li>
+      </random>    </template>
+  </category>
+  <category>
+    <pattern>理论</pattern>
+    <template>
+      <random>        <li>理论力学什么的最讨厌了(&gt_&lt)</li>
+        <li>克拉申的输入假说，还有普遍语法背景下的二语理论~~</li>
+      </random>    </template>
+  </category>
+  <category>
+    <pattern>給我力量 陪我闖蕩</pattern>
+    <template>
+      <random>        <li>我陪你！忘掉那个傻逼吧~</li>
+        <li>好聽</li>
+        <li>加油你超棒的！
+你最優秀</li>
+        <li>神聖之水啊發出耀眼的光芒吧</li>
+      </random>    </template>
+  </category>
+  <category>
+    <pattern>﻿力量</pattern>
+    <template>
+      <random>
+        <li>理论</li>
+        <li>給我力量 陪我闖蕩</li>
+        <li>太费钱</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>理论</pattern>
+    <template>
+      <random>
+        <li>理论力学什么的最讨厌了(&gt_&lt)</li>
+        <li>克拉申的输入假说，还有普遍语法背景下的二语理论~~</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>給我力量 陪我闖蕩</pattern>
+    <template>
+      <random>
+        <li>加油你超棒的！
+你最優秀</li>
+        <li>神聖之水啊發出耀眼的光芒吧</li>
+        <li>我陪你！忘掉那个傻逼吧~</li>
+        <li>耶和華是你的力量!</li>
+        <li>原來命運聚落我的肩上~</li>
+        <li>好聽</li>
+      </random>
+    </template>
+  </category>

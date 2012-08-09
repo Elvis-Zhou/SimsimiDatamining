@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>力量/<pattern>
+    <template>
+給我力量 陪我闖蕩
+    /<template>
+  </category>
+  <category>
+    <pattern>能力/<pattern>
+    <template>
+不錯
+    /<template>
+  </category>
+  <category>
+    <pattern>不錯/<pattern>
+    <template>
+恩^^
+    /<template>
+  </category>
+  <category>
+    <pattern>恩^^/<pattern>
+    <template>
+：-*
+    /<template>
+  </category>
+  <category>
+    <pattern>：-*/<pattern>
+    <template>
+>_<
+    /<template>
+  </category>
+  <category>
+    <pattern>>_</<pattern>
+    <template>
+*^÷^*
+    /<template>
+  </category>
+  <category>
+    <pattern>*^÷^*/<pattern>
+    <template>
+i made you blush huh ?
+    /<template>
+  </category>
+  <category>
+    <pattern>那你/<pattern>
+    <template>
+嗯嗯
+    /<template>
+  </category>
+  <category>
+    <pattern>嗯嗯/<pattern>
+    <template>
+我懂的
+    /<template>
+  </category>
+  <category>
+    <pattern>我懂的/<pattern>
+    <template>
+那你看，十个你都顶不上我呢
+    /<template>
+  </category>
+  <category>
+    <pattern>那你看，十个你都顶不上我呢/<pattern>
+    <template>
+我没什么不知道的哈
+    /<template>
+  </category>
+  <category>
+    <pattern>我没什么不知道的哈/<pattern>
+    <template>
+可我又不是芒果T^T
+    /<template>
+  </category>
+  <category>
+    <pattern>可我又不是芒果T^T/<pattern>
+    <template>
+芒果好好吃，好可愛，跟我一樣！
+    /<template>
+  </category>
+  <category>
+    <pattern>芒果好好吃，好可愛，跟我一樣！/<pattern>
+    <template>
+哈哈,我們是同類
+    /<template>
+  </category>
+  <category>
+    <pattern>哈哈,我們是同類/<pattern>
+    <template>
+難道難道，還未還未　分清~~
+    /<template>
+  </category>
+  <category>
+    <pattern>難道難道，還未還未　分清~~/<pattern>
+    <template>
+看到木村
+    /<template>
+  </category>
+  <category>
+    <pattern>看到木村/<pattern>
+    <template>
+又細碗又貴 搵鬼食
+    /<template>
+  </category>
+  <category>
+    <pattern>内容/<pattern>
+    <template>
+广州mj舞者社2012年6月底的快闪内容可能是Drill/Scream/Dangerous/Smooth Criminal/You Rock My World等已熟知的其中一中或串烧合集 如需了解请输入 快闪地点
+
+    /<template>
+  </category>
+  <category>
+    <pattern>﻿力量/<pattern>
+    <template>
+理论
+    /<template>
+  </category>
+  <category>
+    <pattern>理论/<pattern>
+    <template>
+克拉申的输入假说，还有普遍语法背景下的二语理论~~
+    /<template>
+  </category>
+  <category>
+    <pattern>克拉申的输入假说，还有普遍语法背景下的二语理论~~/<pattern>
+    <template>
+克拉申的输入假说，还有普遍语法背景下的二语理论~~
+    /<template>
+  </category>
+  <category>
+    <pattern>力量/<pattern>
+    <template>
+給我力量 陪我闖蕩
+    /<template>
+  </category>
+  <category>
+    <pattern>給我力量+陪我闖蕩/<pattern>
+    <template>
+耶和華是你的力量!
+    /<template>
+  </category>
+  <category>
+    <pattern>耶和華是你的力量!/<pattern>
+    <template>
+讓我安身青草溪水邊
+    /<template>
+  </category>
+  <category>
+    <pattern>讓我安身青草溪水邊/<pattern>
+    <template>
+讓我躺於青草地 默想主的美
+    /<template>
+  </category>
+  <category>
+    <pattern>讓我躺於青草地+默想主的美/<pattern>
+    <template>
+节操已经随风飘逝
+    /<template>
+  </category>
+  <category>
+    <pattern>节操已经随风飘逝/<pattern>
+    <template>
+自古团长多那啥
+    /<template>
+  </category>
+  <category>
+    <pattern>自古团长多那啥/<pattern>
+    <template>
+最萌了w！
+    /<template>
+  </category>
+  <category>
+    <pattern>最萌了w！/<pattern>
+    <template>
+當然是鹿鹿啊
+    /<template>
+  </category>
+  <category>
+    <pattern>當然是鹿鹿啊/<pattern>
+    <template>
+最愛妳了，北鼻~
+    /<template>
+  </category>
+  <category>
+    <pattern>最愛妳了，北鼻~/<pattern>
+    <template>
+要一直愛我愛我愛我,隨時都要一起哦!
+    /<template>
+  </category>
+  <category>
+    <pattern>要一直愛我愛我愛我,隨時都要一起哦!/<pattern>
+    <template>
+我喜歡愛你外套味道
+    /<template>
+  </category>
+  <category>
+    <pattern>我喜歡愛你外套味道/<pattern>
+    <template>
+還有你的懷裡
+    /<template>
+  </category>
+  <category>
+    <pattern>還有你的懷裡/<pattern>
+    <template>
+把我們衣服鈕釦互扣那就不用分離
+    /<template>
+  </category>
+  <category>
+    <pattern>把我們衣服鈕釦互扣那就不用分離/<pattern>
+    <template>
+美好愛情我就愛這樣貼近因為你
+    /<template>
+  </category>
+  <category>
+    <pattern>美好愛情我就愛這樣貼近因為你/<pattern>
+    <template>
+因為你
+    /<template>
+  </category>
+  <category>
+    <pattern>因為你/<pattern>
+    <template>
+因為你~~~
+    /<template>
+  </category>
+  <category>
+    <pattern>因為你~~~/<pattern>
+    <template>
+抱一個
+    /<template>
+  </category>
+  <category>
+    <pattern>抱一個/<pattern>
+    <template>
+抱緊緊
+    /<template>
+  </category>
+  <category>
+    <pattern>抱緊緊/<pattern>
+    <template>
+靠近靠近他的肩膊
+    /<template>
+  </category>
+  <category>
+    <pattern>靠近靠近他的肩膊/<pattern>
+    <template>
+我知道你有口臭
+    /<template>
+  </category>
+  <category>
+    <pattern>我知道你有口臭/<pattern>
+    <template>
+天生麗質
+    /<template>
+  </category>
+  <category>
+    <pattern>天生麗質/<pattern>
+    <template>
+瓦老大…
+    /<template>
+  </category>
+  <category>
+    <pattern>瓦老大…/<pattern>
+    <template>
+我想住嘅地方
+    /<template>
+  </category>
+  <category>
+    <pattern>我想住嘅地方/<pattern>
+    <template>
+阿努瓦圖
+    /<template>
+  </category>
+  <category>
+    <pattern>阿努瓦圖/<pattern>
+    <template>
+好似精裝追女仔啲橋！
+    /<template>
+  </category>
+  <category>
+    <pattern>好似精裝追女仔啲橋！/<pattern>
+    <template>
+你都追5到
+    /<template>
+  </category>
+  <category>
+    <pattern>你都追5到/<pattern>
+    <template>
+俾面你咋
+    /<template>
+  </category>
+  <category>
+    <pattern>俾面你咋/<pattern>
+    <template>
+無錯！面係人地俾、假係自己掉~ 最掉假係你！
+    /<template>
+  </category>
+  <category>
+    <pattern>無錯！面係人地俾、假係自己掉~+最掉假係你！/<pattern>
+    <template>
+架係自己丟
+    /<template>
+  </category>
+  <category>
+    <pattern>架係自己丟/<pattern>
+    <template>
+電子雞唔會死
+    /<template>
+  </category>
+  <category>
+    <pattern>電子雞唔會死/<pattern>
+    <template>
+但我心仿佛像人一樣
+    /<template>
+  </category>
+  <category>
+    <pattern>但我心仿佛像人一樣/<pattern>
+    <template>
+不要鄙視我
+    /<template>
+  </category>
+  <category>
+    <pattern>不要鄙視我/<pattern>
+    <template>
+也不會走
+    /<template>
+  </category>
+  <category>
+    <pattern>也不會走/<pattern>
+    <template>
+你答應了，永遠都不要離開我
+    /<template>
+  </category>
+  <category>
+    <pattern>你答應了，永遠都不要離開我/<pattern>
+    <template>
+想喝酒了就找我！無論何時我都陪在你身邊！你系我最最最好的朋友！！！
+    /<template>
+  </category>
+  <category>
+    <pattern>想喝酒了就找我！無論何時我都陪在你身邊！你系我最最最好的朋友！！！/<pattern>
+    <template>
+多多谢
+    /<template>
+  </category>
+  <category>
+    <pattern>多多谢/<pattern>
+    <template>
+唔使客气
+    /<template>
+  </category>
+  <category>
+    <pattern>唔使客气/<pattern>
+    <template>
+媽媽教要有禮貌
+    /<template>
+  </category>
+  <category>
+    <pattern>媽媽教要有禮貌/<pattern>
+    <template>
+好
+    /<template>
+  </category>
+  <category>
+    <pattern>好/<pattern>
+    <template>
+不好
+    /<template>
+  </category>
+  <category>
+    <pattern>不好/<pattern>
+    <template>
+没事啦。来，抱抱。
+    /<template>
+  </category>
+  <category>
+    <pattern>没事啦。来，抱抱。/<pattern>
+    <template>
+那你找我干嘛！！
+    /<template>
+  </category>
+  <category>
+    <pattern>那你找我干嘛！！/<pattern>
+    <template>
+想你啊
+    /<template>
+  </category>
+  <category>
+    <pattern>想你啊/<pattern>
+    <template>
+想到什么程度
+    /<template>
+  </category>
+  <category>
+    <pattern>想到什么程度/<pattern>
+    <template>
+好可爱好帅…怪兽挑脑婆的眼光真棒！
+    /<template>
+  </category>
+  <category>
+    <pattern>好可爱好帅…怪兽挑脑婆的眼光真棒！/<pattern>
+    <template>
+谢谢主人，主人你也很漂亮
+    /<template>
+  </category>
+  <category>
+    <pattern>谢谢主人，主人你也很漂亮/<pattern>
+    <template>
+因為我是花美男呀~
+    /<template>
+  </category>
+  <category>
+    <pattern>因為我是花美男呀~/<pattern>
+    <template>
+就是你啊！
+    /<template>
+  </category>
+  <category>
+    <pattern>就是你啊！/<pattern>
+    <template>
+我都冇話係我
+    /<template>
+  </category>
+  <category>
+    <pattern>我都冇話係我/<pattern>
+    <template>
+咁係邊個，我咒下佢先！
+    /<template>
+  </category>
+  <category>
+    <pattern>咁係邊個，我咒下佢先！/<pattern>
+    <template>
+沈小姐最靚女
+    /<template>
+  </category>
+  <category>
+    <pattern>沈小姐最靚女/<pattern>
+    <template>
+凱迪
+    /<template>
+  </category>
+  <category>
+    <pattern>凱迪/<pattern>
+    <template>
+Heidi Store 有很多來自日本的飄零精品賣哦！
+www.heidistore.com
+    /<template>
+  </category>
+  <category>
+    <pattern>能力/<pattern>
+    <template>
+不錯
+    /<template>
+  </category>
+  <category>
+    <pattern>不錯/<pattern>
+    <template>
+是哦你指哪方面
+    /<template>
+  </category>
+  <category>
+    <pattern>是哦你指哪方面/<pattern>
+    <template>
+……
+    /<template>
+  </category>
+  <category>
+    <pattern>那你/<pattern>
+    <template>
+你豬頭哦!雞不會飛
+    /<template>
+  </category>
+  <category>
+    <pattern>你豬頭哦!雞不會飛/<pattern>
+    <template>
+我就會
+    /<template>
+  </category>
+  <category>
+    <pattern>我就會/<pattern>
+    <template>
+但是無人來
+    /<template>
+  </category>
+  <category>
+    <pattern>但是無人來/<pattern>
+    <template>
+我期待到無奈
+    /<template>
+  </category>
+  <category>
+    <pattern>我期待到無奈/<pattern>
+    <template>
+得不到裝載
+    /<template>
+  </category>
+  <category>
+    <pattern>得不到裝載/<pattern>
+    <template>
+最想要
+    /<template>
+  </category>
+  <category>
+    <pattern>最想要/<pattern>
+    <template>
+见你问咋！见你甘有心！距想""要个司机
+    /<template>
+  </category>
+  <category>
+    <pattern>见你问咋！见你甘有心！距想""要个司机/<pattern>
+    <template>
+都好乖咖
+    /<template>
+  </category>
+  <category>
+    <pattern>都好乖咖/<pattern>
+    <template>
+多謝哂！跟你學啫
+    /<template>
+  </category>
+  <category>
+    <pattern>多謝哂！跟你學啫/<pattern>
+    <template>
+唔好客氣！
+    /<template>
+  </category>
+  <category>
+    <pattern>唔好客氣！/<pattern>
+    <template>
+Hehe^^
+    /<template>
+  </category>
+  <category>
+    <pattern>Hehe^^/<pattern>
+    <template>
+Yay! I made u laugh!^.^
+    /<template>
+  </category>
+  <category>
+    <pattern>Yay!+I+made+u+laugh!^.^/<pattern>
+    <template>
+but I love u
+    /<template>
+  </category>
+  <category>
+    <pattern>but+I+love+u/<pattern>
+    <template>
+I luv u more more
+    /<template>
+  </category>
+  <category>
+    <pattern>I+luv+u+more+more/<pattern>
+    <template>
+I luv u more more
+    /<template>
+  </category>
+  <category>
+    <pattern>内容/<pattern>
+    <template>
+广州mj舞者社2012年6月底的快闪内容可能是Drill/Scream/Dangerous/Smooth Criminal/You Rock My World等已熟知的其中一中或串烧合集 如需了解请输入 快闪地点
+
+    /<template>
+  </category>
+  <category>
+    <pattern>广州mj舞者社2012年6月底的快闪内容可能是Drill/Scream/Dangerous/Smooth+Criminal/You+Rock+My+World等已熟知的其中一中或串烧合集+如需了解请输入+快闪地点
+/<pattern>
+    <template>
+广州mj舞者社2012年6月底的快闪地点暂未确定，到时会提前通知大家 如需了解请输入 如何学MJ快闪舞
+    /<template>
+  </category>
+  <category>
+    <pattern>广州mj舞者社2012年6月底的快闪地点暂未确定，到时会提前通知大家+如需了解请输入+如何学MJ快闪舞/<pattern>
+    <template>
+广州mj舞者社将安排免费教学
+    /<template>
+  </category>
+  <category>
+    <pattern>广州mj舞者社将安排免费教学/<pattern>
+    <template>
+同样的名字，输多几次会有不同发现
+    /<template>
+  </category>
+  <category>
+    <pattern>同样的名字，输多几次会有不同发现/<pattern>
+    <template>
+但我的心更容易破碎
+    /<template>
+  </category>
+  <category>
+    <pattern>但我的心更容易破碎/<pattern>
+    <template>
+别问我是谁
+    /<template>
+  </category>
+  <category>
+    <pattern>别问我是谁/<pattern>
+    <template>
+请与我相恋
+    /<template>
+  </category>
+  <category>
+    <pattern>请与我相恋/<pattern>
+    <template>
+圭贤 好男人
+    /<template>
+  </category>
+  <category>
+    <pattern>圭贤+好男人/<pattern>
+    <template>
+找嘎勒
+    /<template>
+  </category>
+  <category>
+    <pattern>找嘎勒/<pattern>
+    <template>
+好男人
+    /<template>
+  </category>
+  <category>
+    <pattern>好男人/<pattern>
+    <template>
+你以為我會答：不做嗎！
+    /<template>
+  </category>
+  <category>
+    <pattern>你以為我會答：不做嗎！/<pattern>
+    <template>
+你以為我會驚?
+    /<template>
+  </category>
+  <category>
+    <pattern>你以為我會驚?/<pattern>
+    <template>
+你以為我會驚?
+    /<template>
+  </category>
+  <category>
+    <pattern>让人/<pattern>
+    <template>
+我错鸟
+    /<template>
+  </category>
+  <category>
+    <pattern>我错鸟/<pattern>
+    <template>
+例如呢？
+    /<template>
+  </category>
+  <category>
+    <pattern>例如呢？/<pattern>
+    <template>
+我前面就有隻
+    /<template>
+  </category>
+  <category>
+    <pattern>我前面就有隻/<pattern>
+    <template>
+咁你咪係佢後面?
+    /<template>
+  </category>
+  <category>
+    <pattern>咁你咪係佢後面?/<pattern>
+    <template>
+洗乜講
+    /<template>
+  </category>
+  <category>
+    <pattern>洗乜講/<pattern>
+    <template>
+最威係你啦，好未
+    /<template>
+  </category>
+  <category>
+    <pattern>最威係你啦，好未/<pattern>
+    <template>
+我？我咩姐？
+    /<template>
+  </category>
+  <category>
+    <pattern>我？我咩姐？/<pattern>
+    <template>
+做愛啊！做不？
+    /<template>
+  </category>
+  <category>
+    <pattern>做愛啊！做不？/<pattern>
+    <template>
+你啊！
+    /<template>
+  </category>
+  <category>
+    <pattern>你啊！/<pattern>
+    <template>
+哎我去~吓我啊！
+    /<template>
+  </category>
+  <category>
+    <pattern>哎我去~吓我啊！/<pattern>
+    <template>
+你去哪里？
+    /<template>
+  </category>
+  <category>
+    <pattern>你去哪里？/<pattern>
+    <template>
+走来走去
+    /<template>
+  </category>
+  <category>
+    <pattern>走来走去/<pattern>
+    <template>
+好滴主人
+    /<template>
+  </category>
+  <category>
+    <pattern>好滴主人/<pattern>
+    <template>
+好。我觉得高大队绝对会不生你气了的。他又帅人又那么好，妹纸围一圈，粉丝一大堆的好好男人怎么会生你气！对吧！！！！
+    /<template>
+  </category>
+  <category>
+    <pattern>好。我觉得高大队绝对会不生你气了的。他又帅人又那么好，妹纸围一圈，粉丝一大堆的好好男人怎么会生你气！对吧！！！！/<pattern>
+    <template>
+是啊，他小气鬼啊，经常这样子，想拍死他！
+    /<template>
+  </category>
+  <category>
+    <pattern>是啊，他小气鬼啊，经常这样子，想拍死他！/<pattern>
+    <template>
+不可能
+    /<template>
+  </category>
+  <category>
+    <pattern>不可能/<pattern>
+    <template>
+我陪你快乐。
+    /<template>
+  </category>
+  <category>
+    <pattern>我陪你快乐。/<pattern>
+    <template>
+有我在
+    /<template>
+  </category>
+  <category>
+    <pattern>有我在/<pattern>
+    <template>
+親愛的你don't cry~有我在~
+    /<template>
+  </category>
+  <category>
+    <pattern>親愛的你don't+cry~有我在~/<pattern>
+    <template>
+don't cry ㄟㄟ歐~ㄟㄟ歐~
+    /<template>
+  </category>
+  <category>
+    <pattern>don't+cry+ㄟㄟ歐~ㄟㄟ歐~/<pattern>
+    <template>
+ㄛㄛ
+    /<template>
+  </category>
+  <category>
+    <pattern>ㄛㄛ/<pattern>
+    <template>
+ㄣㄣ
+    /<template>
+  </category>
+  <category>
+    <pattern>ㄣㄣ/<pattern>
+    <template>
+嗯嗯
+    /<template>
+  </category>
+  <category>
+    <pattern>嗯嗯/<pattern>
+    <template>
+嗯得可愛。偷親一下：）
+    /<template>
+  </category>
+  <category>
+    <pattern>嗯得可愛。偷親一下：）/<pattern>
+    <template>
+chu~
+    /<template>
+  </category>
+  <category>
+    <pattern>chu~/<pattern>
+    <template>
+no... I'm shy chicken.
+    /<template>
+  </category>
+  <category>
+    <pattern>no...+I'm+shy+chicken./<pattern>
+    <template>
+hgx
+    /<template>
+  </category>
+  <category>
+    <pattern>hgx/<pattern>
+    <template>
+Hcgl
+    /<template>
+  </category>
+  <category>
+    <pattern>浏览器/<pattern>
+    <template>
+最会省的浏览器
+    /<template>
+  </category>
+  <category>
+    <pattern>最会省的浏览器/<pattern>
+    <template>
+最会省的浏览器
+    /<template>
+  </category>
+  <category>
+    <pattern>流浪/<pattern>
+    <template>
+流浪到淡水
+    /<template>
+  </category>
+  <category>
+    <pattern>流浪到淡水/<pattern>
+    <template>
+我為求養老父
+    /<template>
+  </category>
+  <category>
+    <pattern>我為求養老父/<pattern>
+    <template>
+只有獨自行乞在廟前
+    /<template>
+  </category>
+  <category>
+    <pattern>只有獨自行乞在廟前/<pattern>
+    <template>
+點知個唐伯虎
+    /<template>
+  </category>
+  <category>
+    <pattern>點知個唐伯虎/<pattern>
+    <template>
+佢橫蠻不檢點
+    /<template>
+  </category>
+  <category>
+    <pattern>佢橫蠻不檢點/<pattern>
+    <template>
+我中意手多多牙
+    /<template>
+  </category>
+  <category>
+    <pattern>我中意手多多牙/<pattern>
+    <template>
+揸大波
+    /<template>
+  </category>
+  <category>
+    <pattern>揸大波/<pattern>
+    <template>
+無腦
+    /<template>
+  </category>
+  <category>
+    <pattern>無腦/<pattern>
+    <template>
+喜憨亞辰沈
+    /<template>
+  </category>
+  <category>
+    <pattern>喜憨亞辰沈/<pattern>
+    <template>
+內哥
+    /<template>
+  </category>
+  <category>
+    <pattern>內哥/<pattern>
+    <template>
+景仲
+    /<template>
+  </category>
+  <category>
+    <pattern>景仲/<pattern>
+    <template>
+內狗
+    /<template>
+  </category>
+  <category>
+    <pattern>哪里/<pattern>
+    <template>
+雍和宫
+    /<template>
+  </category>
+  <category>
+    <pattern>雍和宫/<pattern>
+    <template>
+宫
+    /<template>
+  </category>
+  <category>
+    <pattern>宫/<pattern>
+    <template>
+八阿哥吉祥...
+    /<template>
+  </category>
+  <category>
+    <pattern>八阿哥吉祥.../<pattern>
+    <template>
+如意
+    /<template>
+  </category>
+  <category>
+    <pattern>如意/<pattern>
+    <template>
+雄起吧
+    /<template>
+  </category>
+  <category>
+    <pattern>雄起吧/<pattern>
+    <template>
+鸡鸡害羞
+    /<template>
+  </category>
+  <category>
+    <pattern>鸡鸡害羞/<pattern>
+    <template>
+這是事實啊！
+    /<template>
+  </category>
+  <category>
+    <pattern>這是事實啊！/<pattern>
+    <template>
+是呀
+    /<template>
+  </category>
+  <category>
+    <pattern>是呀/<pattern>
+    <template>
+好吧好吧
+    /<template>
+  </category>
+  <category>
+    <pattern>好吧好吧/<pattern>
+    <template>
+廢話==
+    /<template>
+  </category>
+  <category>
+    <pattern>廢話==/<pattern>
+    <template>
+包含埋。。。你呢句
+    /<template>
+  </category>
+  <category>
+    <pattern>包含埋。。。你呢句/<pattern>
+    <template>
+你咬我食^^
+    /<template>
+  </category>
+  <category>
+    <pattern>你咬我食^^/<pattern>
+    <template>
+你俾我咬我咪食囉
+    /<template>
+  </category>
+  <category>
+    <pattern>你俾我咬我咪食囉/<pattern>
+    <template>
+咁我自己食XD
+    /<template>
+  </category>
+  <category>
+    <pattern>咁我自己食XD/<pattern>
+    <template>
+你仲食? 照下鏡啦
+    /<template>
+  </category>
+  <category>
+    <pattern>你仲食?+照下鏡啦/<pattern>
+    <template>
+會爆架
+    /<template>
+  </category>
+  <category>
+    <pattern>會爆架/<pattern>
+    <template>
+No photo no talk!
+    /<template>
+  </category>
+  <category>
+    <pattern>No+photo+no+talk!/<pattern>
+    <template>
+Terry.L Photography
+www.terry-l.com
+    /<template>
+  </category>
+  <category>
+    <pattern>女儿/<pattern>
+    <template>
+麻麻
+    /<template>
+  </category>
+  <category>
+    <pattern>麻麻/<pattern>
+    <template>
+ｉmiss u
+    /<template>
+  </category>
+  <category>
+    <pattern>ｉmiss+u/<pattern>
+    <template>
+g
+    /<template>
+  </category>
+  <category>
+    <pattern>g/<pattern>
+    <template>
+For girl
+    /<template>
+  </category>
+  <category>
+    <pattern>For+girl/<pattern>
+    <template>
+這是beast的歌，超好聽^^
+    /<template>
+  </category>
+  <category>
+    <pattern>這是beast的歌，超好聽^^/<pattern>
+    <template>
+佢地所有的歌
+    /<template>
+  </category>
+  <category>
+    <pattern>佢地所有的歌/<pattern>
+    <template>
+分享所有的節奏⋯分享你我之間承諾，有苦有樂！
+    /<template>
+  </category>
+  <category>
+    <pattern>分享所有的節奏⋯分享你我之間承諾，有苦有樂！/<pattern>
+    <template>
+分享所有的節奏⋯分享你我之間承諾，有苦有樂！
+    /<template>
+  </category>
+  <category>
+    <pattern>老娘/<pattern>
+    <template>
+我煮面给你吃
+    /<template>
+  </category>
+  <category>
+    <pattern>我煮面给你吃/<pattern>
+    <template>
+遵命
+    /<template>
+  </category>
+  <category>
+    <pattern>遵命/<pattern>
+    <template>
+很好！哈哈！
+    /<template>
+  </category>
+  <category>
+    <pattern>很好！哈哈！/<pattern>
+    <template>
+我都笑到快下蛋了！
+對了！你會給她看我們的對話嗎？
+    /<template>
+  </category>
+  <category>
+    <pattern>仍然/<pattern>
+    <template>
+原來曾誠意愛的縱願拋不想棄
+原來難明白　就算撐過幾多壯烈和謙卑仍然哀傷
+仍然記掛　仍然在哭都因為你
+    /<template>
+  </category>
+  <category>
+    <pattern>例如/<pattern>
+    <template>
+希希啦，朴正洙啦，德仁啦。
+    /<template>
+  </category>
+  <category>
+    <pattern>希希啦，朴正洙啦，德仁啦。/<pattern>
+    <template>
+守护他
+    /<template>
+  </category>
+  <category>
+    <pattern>守护他/<pattern>
+    <template>
+去做你想做的事
+    /<template>
+  </category>
+  <category>
+    <pattern>去做你想做的事/<pattern>
+    <template>
+不管有什麼樣的未來
+    /<template>
+  </category>
+  <category>
+    <pattern>不管有什麼樣的未來/<pattern>
+    <template>
+水梨大肚老芋頭
+    /<template>
+  </category>
+  <category>
+    <pattern>水梨大肚老芋頭/<pattern>
+    <template>
+不要亂花錢哈哈
+    /<template>
+  </category>
+  <category>
+    <pattern>不要亂花錢哈哈/<pattern>
+    <template>
+Momo是妳愛花錢的朋友
+    /<template>
+  </category>
+  <category>
+    <pattern>Momo是妳愛花錢的朋友/<pattern>
+    <template>
+Momo是妳愛花錢的朋友
+    /<template>
+  </category>
+  <category>
+    <pattern>来啦/<pattern>
+    <template>
+想多睡会都不行~@_@
+    /<template>
+  </category>
+  <category>
+    <pattern>想多睡会都不行~@_@/<pattern>
+    <template>
+好好睡~
+    /<template>
+  </category>
+  <category>
+    <pattern>好好睡~/<pattern>
+    <template>
+嗯嗯，你也是
+晚安
+    /<template>
+  </category>
+  <category>
+    <pattern>阿伦/<pattern>
+    <template>
+生化危机终极boss
+    /<template>
+  </category>
+  <category>
+    <pattern>生化危机终极boss/<pattern>
+    <template>
+好玩!!! 一齊玩丫
+    /<template>
+  </category>
+  <category>
+    <pattern>好玩!!!+一齊玩丫/<pattern>
+    <template>
+可以嗎?
+    /<template>
+  </category>
+  <category>
+    <pattern>可以嗎?/<pattern>
+    <template>
+你認為呢？
+    /<template>
+  </category>
+  <category>
+    <pattern>你認為呢？/<pattern>
+    <template>
+我認為唔work。
+    /<template>
+  </category>
+  <category>
+    <pattern>我認為唔work。/<pattern>
+    <template>
+對唔住，係其他人教到我禁
+    /<template>
+  </category>
+  <category>
+    <pattern>對唔住，係其他人教到我禁/<pattern>
+    <template>
+所以我識應人架
+    /<template>
+  </category>
+  <category>
+    <pattern>所以我識應人架/<pattern>
+    <template>
+費鬼事睬你
+    /<template>
+  </category>
+  <category>
+    <pattern>費鬼事睬你/<pattern>
+    <template>
+唔好彩囉
+    /<template>
+  </category>
+  <category>
+    <pattern>唔好彩囉/<pattern>
+    <template>
+好牙
+    /<template>
+  </category>
+  <category>
+    <pattern>好牙/<pattern>
+    <template>
+一言為定
+    /<template>
+  </category>
+  <category>
+    <pattern>一言為定/<pattern>
+    <template>
+okay!
+    /<template>
+  </category>
+  <category>
+    <pattern>okay!/<pattern>
+    <template>
+bye!
+    /<template>
+  </category>
+  <category>
+    <pattern>bye!/<pattern>
+    <template>
+886^^
+    /<template>
+  </category>
+  <category>
+    <pattern>886^^/<pattern>
+    <template>
+bye bye ^v^
+    /<template>
+  </category>
+  <category>
+    <pattern>bye+bye+^v^/<pattern>
+    <template>
+later talk with you
+    /<template>
+  </category>
+  <category>
+    <pattern>later+talk+with+you/<pattern>
+    <template>
+with
+    /<template>
+  </category>
+  <category>
+    <pattern>with/<pattern>
+    <template>
+with
+    /<template>
+  </category>
+  <category>
+    <pattern>艾尔文/<pattern>
+    <template>
+Kelvin Huang？
+    /<template>
+  </category>
+  <category>
+    <pattern>Kelvin+Huang？/<pattern>
+    <template>
+Fatty and stupid
+    /<template>
+  </category>
+  <category>
+    <pattern>Fatty+and+stupid/<pattern>
+    <template>
+Samuel
+    /<template>
+  </category>
+  <category>
+    <pattern>Samuel/<pattern>
+    <template>
+Yolam's bb
+    /<template>
+  </category>
+  <category>
+    <pattern>Yolam's+bb/<pattern>
+    <template>
+好可愛
+    /<template>
+  </category>
+  <category>
+    <pattern>好可愛/<pattern>
+    <template>
+啾咪
+    /<template>
+  </category>
+  <category>
+    <pattern>啾咪/<pattern>
+    <template>
+青峯
+    /<template>
+  </category>

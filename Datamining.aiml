@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category>
+    <pattern>﻿力量</pattern>
+    <template>
+      <random>
+        <li>理论</li>
+        <li>給我力量 陪我闖蕩</li>
+        <li>太费钱</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>理论</pattern>
+    <template>
+      <random>
+        <li>理论力学什么的最讨厌了(&gt;_&lt;)</li>
+        <li>克拉申的输入假说，还有普遍语法背景下的二语理论~~</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>給我力量 陪我闖蕩</pattern>
+    <template>
+      <random>
+        <li>我陪你！忘掉那个傻逼吧~</li>
+        <li>耶和華是你的力量!</li>
+        <li>好聽</li>
+        <li>神聖之水啊發出耀眼的光芒吧</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>理论力学什么的最讨厌了(&gt;_&lt;)</pattern>
+    <template>
+      <random>
+        <li>理论力学什么的最讨厌了(&gt;_&lt;)</li>
+        <li>就是就是。</li>
+        <li>偶就系酱紫，肿么办。</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>克拉申的输入假说，还有普遍语法背景下的二语理论~~</pattern>
+    <template>
+      <random>
+        <li>克拉申的输入假说，还有普遍语法背景下的二语理论~~</li>
+        <li>当然，做饭给二哥哥吃呢，在外面也是人见人爱呢</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>耶和華是你的力量!</pattern>
+    <template>
+      <random>
+        <li>我的牧者</li>
+        <li>我说你的就是你的，拿去！</li>
+        <li>飞机大人</li>
+        <li>讓我安身青草溪水邊</li>
+        <li>你是我最疼爱的宝贝啊</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>神聖之水啊發出耀眼的光芒吧</pattern>
+    <template>
+      <random>
+        <li>凌冽的月光把眼睛关上</li>
+        <li>要不要來一首安可曲</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>我陪你！忘掉那个傻逼吧~</pattern>
+    <template>
+      <random>
+        <li>有我在</li>
+        <li>是的！不爱你的都是傻逼！大傻逼！</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>好聽</pattern>
+    <template>
+      <random>
+        <li>3Q</li>
+        <li>那當然</li>
+        <li>我都覺，無人能及 你最鍾意聽佢邊首歌?</li>
+        <li>就知道你沒膽說不好聽</li>
+        <li>唔覺囉!!</li>
+        <li>X2 ;)</li>
+      </random>
+    </template>
+  </category>
+</aiml>
