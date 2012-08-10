@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dae09276-1407-4139-a389-0c118a7db09b" name="Default" comment="" />
+    <list default="true" id="dae09276-1407-4139-a389-0c118a7db09b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Datamining1.txt" afterPath="$PROJECT_DIR$/Datamining1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simsimidatamining.py" afterPath="$PROJECT_DIR$/Simsimidatamining.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku1.txt" afterPath="$PROJECT_DIR$/divide/Ciku1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku10.txt" afterPath="$PROJECT_DIR$/divide/Ciku10.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku2.txt" afterPath="$PROJECT_DIR$/divide/Ciku2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku3.txt" afterPath="$PROJECT_DIR$/divide/Ciku3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku4.txt" afterPath="$PROJECT_DIR$/divide/Ciku4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku5.txt" afterPath="$PROJECT_DIR$/divide/Ciku5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku6.txt" afterPath="$PROJECT_DIR$/divide/Ciku6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku7.txt" afterPath="$PROJECT_DIR$/divide/Ciku7.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku8.txt" afterPath="$PROJECT_DIR$/divide/Ciku8.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/Ciku9.txt" afterPath="$PROJECT_DIR$/divide/Ciku9.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divide/dealwithUserDict.py" afterPath="$PROJECT_DIR$/divide/dealwithUserDict.py" />
+    </list>
     <ignored path="SimsimiDM.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +42,7 @@
       <file leaf-file-name="Simsimidatamining.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Simsimidatamining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="36" selection-start="2893" selection-end="2893" vertical-scroll-proportion="0.008032128">
+            <state line="145" column="21" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.46586347">
               <folding>
                 <element signature="e#74#96#0" expanded="true" />
               </folding>
@@ -36,7 +53,7 @@
       <file leaf-file-name="dealwithUserDict.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/divide/dealwithUserDict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+            <state line="9" column="8" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -49,11 +66,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Simsimidatamining.py" />
         <option value="$PROJECT_DIR$/divide/dealwithUserDict.py" />
+        <option value="$PROJECT_DIR$/Simsimidatamining.py" />
       </list>
     </option>
   </component>
@@ -62,7 +82,7 @@
     <option name="width" value="1278" />
     <option name="height" value="942" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -106,6 +126,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimsimiDM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimsimiDM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="divide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -115,7 +149,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -127,7 +161,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.dealwithUserDict">
+  <component name="RunManager" selected="Python.Simsimidatamining.py">
     <configuration default="false" name="dealwithUserDict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="0" width="1278" height="942" extended-state="1" />
+    <frame x="2" y="0" width="1278" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -352,6 +386,14 @@
           <url>file://$PROJECT_DIR$/Simsimidatamining.py</url>
           <line>142</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Simsimidatamining.py</url>
+          <line>112</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Simsimidatamining.py</url>
+          <line>114</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -363,16 +405,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dealwithUserDict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="8" selection-start="319" selection-end="319" vertical-scroll-proportion="0.2751004">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/divide/dealwithUserDict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+        <state line="9" column="8" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Simsimidatamining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="36" selection-start="2893" selection-end="2893" vertical-scroll-proportion="0.008032128">
+        <state line="145" column="21" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.46586347">
           <folding>
             <element signature="e#74#96#0" expanded="true" />
           </folding>

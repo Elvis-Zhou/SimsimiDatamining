@@ -20,6 +20,6 @@ while True:
         out.flush()
         out=open(filename % i,'w')
         i+=1
-    out.write(text+'\n')
+    out.write(text)
 f.close()
 #out.close()

@@ -6,7 +6,7 @@ import urllib ,urllib2
 from jianfan import jtof, ftoj
 
 urllib2.socket.setdefaulttimeout(30)
-f=open('SougouCiku.txt','r')
+f=open('Ciku1.txt','r')
 out=open('Datamining1.txt','a')
 count=0
 
@@ -26,7 +26,7 @@ def searchsimsimi(keyword):
     request2.add_header("Referer","http://www.simsimi.com")
     t=0
     wordset=set()
-    while t<5:
+    while t<6:
         try:
             t+=1
             result = urllib2.urlopen(request).read()
@@ -41,7 +41,7 @@ def searchsimsimi(keyword):
         except BaseException:
             pass
         finally:
-            if t>=5:
+            if t>5:
                 print "error"+str(t)+"  :"+keyword
                 break
     #return wordset
@@ -114,7 +114,7 @@ if __name__=='__main__':
             break
         i=0
         word=text
-        temp=""
+        #temp=""
         wordset=set() #当前索引词的大集合
         wordlist=set() #目前放进去词搜索产生的集合，也就是要接下来搜索
         wordlist1=set() #临时存储2级结点生成的词典
@@ -145,7 +145,7 @@ if __name__=='__main__':
             if len(wordlist)==0:
                 break
             if  i>=12:
-                print "i到达指定层数 break"
+                print "i到达指定层数 break now:"+text
                 break
     print "finish"
     f.close()
