@@ -9,8 +9,12 @@ from jianfan import jtof, ftoj
 urllib2.socket.setdefaulttimeout(30)
 f=open('Ciku1.txt','r')
 out=open('Datamining1.txt','a')
+out2=open('Datamining1-long.txt','a')
+maxwordlength=40
+maxthreads=100
 count=0
-
+lock1=threading.RLock()
+lock2=threading.RLock()
 def searchsimsimi(keyword):
     #titles=[]
     #values = {
@@ -64,8 +68,8 @@ def writetoaiml (input,outputset):
     global out,count
     out.write("  <category>\n")
     out.write("    <pattern>")
-    #out.write(input)
-    words=input.replace("&","&amp;")
+    words=ftoj(input.decode('utf-8')).encode('utf-8')
+    words=words.replace("&","&amp;")
     words=words.replace("<","&lt;")
     words=words.replace(">","&gt;")
     words=words.replace("'","&apos;")
@@ -108,6 +112,55 @@ def writetoaiml (input,outputset):
     #count += 1
     print count
 
+def writetoaiml2 (input,outputset):
+    global out,count
+    out2.write("  <category>\n")
+    out2.write("    <pattern>")
+    words=ftoj(input.decode('utf-8')).encode('utf-8')
+    words=words.replace("&","&amp;")
+    words=words.replace("<","&lt;")
+    words=words.replace(">","&gt;")
+    words=words.replace("'","&apos;")
+    words=words.replace('"',"&quot;")
+    out2.write(words)
+    out2.write("</pattern>\n")
+    out2.write("    <template>\n")
+    if len(outputset)>=1:
+        out2.write("      <random>\n")
+        for x in outputset:
+            print input
+            print ftoj(x.decode('utf-8')).encode('utf-8')
+            out2.write("        <li>")
+            words=x.replace("&","&amp;")
+            words=words.replace("<","&lt;")
+            words=words.replace(">","&gt;")
+            words=words.replace("'","&apos;")
+            words=words.replace('"',"&quot;")
+            words=ftoj(words.decode('utf-8')).encode('utf-8')
+            out2.write(words)
+            out2.write("</li>\n")
+            count += 1
+        out2.write("      </random>\n")
+    else:
+        print input
+        x=outputset.pop()
+        print ftoj(x.decode('utf-8')).encode('utf-8')
+        words=x.replace("&","&amp;")
+        words=words.replace("<","&lt;")
+        words=words.replace(">","&gt;")
+        words=words.replace("'","&apos;")
+        words=words.replace('"',"&quot;")
+        words=ftoj(words.decode('utf-8')).encode('utf-8')
+        out2.write(words+'\n')
+
+        count += 1
+    out2.write("    </template>\n")
+    out2.write("  </category>\n")
+    out2.flush()
+    #count += 1
+    print count
+
+
 class DMthread(threading.Thread):
     def __init__(self,text):
         threading.Thread.__init__(self)
@@ -136,9 +189,15 @@ class DMthread(threading.Thread):
                     break
                 self.wordlist1|=self.wordlist2
                 if len(self.wordlist2)>0:
-                    writetoaiml(word,self.wordlist2)
                     self.wordset.add(word)
-
+                    if len(word.strip())<=maxwordlength:
+                        lock1.acquire()
+                        writetoaiml(word,self.wordlist2)
+                        lock1.release()
+                    else:
+                        lock2.acquire()
+                        writetoaiml2(word,self.wordlist2)
+                        lock2.release()
             self.i += 1
             self.wordset|=self.wordlist1
             self.wordlist=set()|self.wordlist1
@@ -153,14 +212,19 @@ if __name__=='__main__':
     count=0
     while True:
         text=f.readline().strip()
-        if len(text)==0:
+        if len(text)==0 and not threads:
+            for t in threads:
+                t.start()
+            for t in threads:
+                t.join()
+                count-=1
             break
 
-        if count<9:
+        if count<maxthreads:
             t=DMthread(text)
             threads.append(t)
             count+=1
-        if count>=9:
+        if count>=maxthreads:
             for t in threads:
                 t.start()
             for t in threads:
