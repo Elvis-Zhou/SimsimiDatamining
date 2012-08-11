@@ -3,6 +3,7 @@
 #encoding = utf-8
 #import string
 import urllib ,urllib2
+import threading
 from jianfan import jtof, ftoj
 
 urllib2.socket.setdefaulttimeout(30)
@@ -106,47 +107,66 @@ def writetoaiml (input,outputset):
     out.flush()
     #count += 1
     print count
-    
+
+class DMthread(threading.Thread):
+    def __init__(self,text):
+        threading.Thread.__init__(self)
+        self.wordset=set() #当前索引词的大集合
+        self.wordlist=set() #目前放进去词搜索产生的集合，也就是要接下来搜索
+        self.wordlist1=set() #临时存储2级结点生成的词典
+        self.wordlist2=set() #临时当前词simsimi返回生成的当前词典
+        self.i=0
+        self.word=text
+
+    def run(self):
+        self.i=0
+        self.wordlist.add(self.word)
+
+        while True:
+            self.wordlist1=self.wordlist.copy()
+            for word in self.wordlist:
+                self.wordlist1.remove(word)
+                #print word
+                #word="力量"
+                self.wordlist2=searchsimsimi(word.replace(' ','+'))
+                #print wordlist
+                if len(self.wordlist2)==0:
+                    break
+                if (self.wordset&self.wordlist2)==self.wordlist2:
+                    break
+                self.wordlist1|=self.wordlist2
+                if len(self.wordlist2)>0:
+                    writetoaiml(word,self.wordlist2)
+                    self.wordset.add(word)
+
+            self.i += 1
+            self.wordset|=self.wordlist1
+            self.wordlist=set()|self.wordlist1
+            if len(self.wordlist)==0:
+                break
+            if  self.i>=12:
+                print "i到达指定层数 break now:"+text
+                break
+
 if __name__=='__main__':
+    threads=[]
+    count=0
     while True:
         text=f.readline().strip()
         if len(text)==0:
             break
-        i=0
-        word=text
-        #temp=""
-        wordset=set() #当前索引词的大集合
-        wordlist=set() #目前放进去词搜索产生的集合，也就是要接下来搜索
-        wordlist1=set() #临时存储2级结点生成的词典
-        wordlist2=set() #临时当前词simsimi返回生成的当前词典
-        wordlist.add(word)
-        #print wordlist
 
-        while True:
-            wordlist1=wordlist.copy()
-            for word in wordlist:
-                wordlist1.remove(word)
-                #print word
-                #word="力量"
-                wordlist2=searchsimsimi(word.replace(' ','+'))
-                #print wordlist
-                if len(wordlist2)==0:
-                    break
-                if (wordset&wordlist2)==wordlist2:
-                    break
-                wordlist1|=wordlist2
-                if len(wordlist2)>0:
-                    writetoaiml(word,wordlist2)
-                    wordset.add(word)
+        if count<9:
+            t=DMthread(text)
+            threads.append(t)
+            count+=1
+        if count>=9:
+            for t in threads:
+                t.start()
+            for t in threads:
+                t.join()
+                count-=1
 
-            i += 1
-            wordset|=wordlist1
-            wordlist=set()|wordlist1
-            if len(wordlist)==0:
-                break
-            if  i>=12:
-                print "i到达指定层数 break now:"+text
-                break
     print "finish"
     f.close()
     out.close()
