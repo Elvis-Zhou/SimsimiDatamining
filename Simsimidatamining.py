@@ -2,9 +2,9 @@
 # -*- coding:utf-8 -*-
 #encoding = utf-8
 #import string
-import urllib ,urllib2
+import urllib2
 import threading
-from jianfan import jtof, ftoj
+from jianfan import ftoj
 from Queue import Queue
 
 urllib2.socket.setdefaulttimeout(30)
@@ -12,9 +12,10 @@ f=open('Ciku1.txt','r')
 out=open('Datamining1.txt','a')
 out2=open('Datamining1-long.txt','a')
 maxwordlength=40
-maxthreads=100
+maxthreads=2
 count=0
-maxretry=10
+maxretry=2
+treedeep=2
 lock1=threading.RLock()
 lock2=threading.RLock()
 threads=Queue(maxthreads)
@@ -48,10 +49,11 @@ def searchsimsimi(keyword):
                 #break
         except BaseException:
             pass
-        finally:
-            if t>=maxretry:
-                print "error"+str(t)+"  :"+keyword
-                break
+
+        if t>=maxretry:
+            print "error:"+str(t)+" :"+keyword
+            return wordset
+                #break
     #return wordset
     #print result
     return wordset
@@ -60,12 +62,9 @@ def dealrequest(result):
     word=""
     try:
         word=eval(result)["response"]
-        #print word
-        words=word
-        #writetoaiml(keyword,words)
-        return words
+        return word
     except BaseException:
-        return words
+        return word
 
 def writetoaiml (input,outputset):
     global out,count
@@ -177,7 +176,7 @@ class DMthread(threading.Thread):
 
     def run(self):
         self.i=0
-        self.word=threads.get()
+        self.word=threads.get(1,10)
         self.wordlist.add(self.word)
 
         while True:
@@ -188,7 +187,7 @@ class DMthread(threading.Thread):
                 #word="力量"
                 self.wordlist2=searchsimsimi(word.replace(' ','+'))
                 #print wordlist
-                if len(self.wordlist2)==0:
+                if not len(self.wordlist2):
                     break
                 if (self.wordset&self.wordlist2)==self.wordlist2:
                     break
@@ -206,43 +205,48 @@ class DMthread(threading.Thread):
             self.i += 1
             self.wordset|=self.wordlist1
             self.wordlist=set()|self.wordlist1
-            if len(self.wordlist)==0:
+            if not len(self.wordlist):
+                #threads.task_done()
                 break
-            if  self.i>=12:
-                print "i到达指定层数 break now:"+text
-                threads.task_done()
+            if  self.i>=treedeep:
+                print "treedeep arrive:"+str(treedeep) + " break at keyword: "+self.word,"  "
+                print self.wordlist1
                 break
+        threads.task_done()
+
 
 if __name__=='__main__':
-
 
     #count=0
     while True:
         text=f.readline().strip()
         if len(text)==0 and (threads.qsize()>0):
-            for j in range(0,threads.qsize()):
+            k=threads.qsize()
+            for j in range(0,k):
                 try:
                     t=DMthread()
                     t.start()
                 except RuntimeError:
-                    print "threads had started"
+                    print "threads had started "
             threads.join()
             #threads.remove(t)
             #count=0
+        if len(text)==0 and (threads.qsize()==0):
             break
 
         if threads.qsize()<maxthreads:
             #t=DMthread()
-            threads.put(text)
+            threads.put(text,1)
             #count+=1
         if threads.qsize()>=maxthreads:
-            for j in range(0,threads.qsize()):
+            k=threads.qsize()
+            for j in range(0,k):
                 try:
                     t=DMthread()
                     t.start()
+                    #threads.task_done()
                 except RuntimeError:
-                    print "threads had started"
-
+                    print "threads had started "
             threads.join()
             #count=0
             #threads=[]
