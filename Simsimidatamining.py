@@ -5,6 +5,7 @@
 import urllib ,urllib2
 import threading
 from jianfan import jtof, ftoj
+from Queue import Queue
 
 urllib2.socket.setdefaulttimeout(30)
 f=open('Ciku1.txt','r')
@@ -16,6 +17,7 @@ count=0
 maxretry=10
 lock1=threading.RLock()
 lock2=threading.RLock()
+threads=Queue(maxthreads)
 def searchsimsimi(keyword):
     #titles=[]
     #values = {
@@ -163,17 +165,19 @@ def writetoaiml2 (input,outputset):
 
 
 class DMthread(threading.Thread):
-    def __init__(self,text):
+    global threads
+    def __init__(self):
         threading.Thread.__init__(self)
         self.wordset=set() #当前索引词的大集合
         self.wordlist=set() #目前放进去词搜索产生的集合，也就是要接下来搜索
         self.wordlist1=set() #临时存储2级结点生成的词典
         self.wordlist2=set() #临时当前词simsimi返回生成的当前词典
         self.i=0
-        self.word=text
+        self.word=""
 
     def run(self):
         self.i=0
+        self.word=threads.get()
         self.wordlist.add(self.word)
 
         while True:
@@ -206,41 +210,42 @@ class DMthread(threading.Thread):
                 break
             if  self.i>=12:
                 print "i到达指定层数 break now:"+text
+                threads.task_done()
                 break
 
 if __name__=='__main__':
-    threads=[]
-    count=0
+
+
+    #count=0
     while True:
         text=f.readline().strip()
-        if len(text)==0 and (count>0):
-            for t in threads:
+        if len(text)==0 and (threads.qsize()>0):
+            for j in range(0,threads.qsize()):
                 try:
+                    t=DMthread()
                     t.start()
                 except RuntimeError:
                     print "threads had started"
-            for t in threads:
-                t.join()
-                #threads.remove(t)
-                count-=1
-            threads=[]
+            threads.join()
+            #threads.remove(t)
+            #count=0
             break
 
-        if count<maxthreads:
-            t=DMthread(text)
-            threads.append(t)
-            count+=1
-        if count>=maxthreads:
-            for t in threads:
+        if threads.qsize()<maxthreads:
+            #t=DMthread()
+            threads.put(text)
+            #count+=1
+        if threads.qsize()>=maxthreads:
+            for j in range(0,threads.qsize()):
                 try:
+                    t=DMthread()
                     t.start()
                 except RuntimeError:
                     print "threads had started"
-            for t in threads:
-                t.join()
-                #threads.remove(t)
-                count-=1
-            threads=[]
+
+            threads.join()
+            #count=0
+            #threads=[]
     print "finish"
     f.close()
     out.close()
