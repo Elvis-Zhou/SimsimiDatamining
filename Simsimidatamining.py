@@ -13,6 +13,7 @@ out2=open('Datamining1-long.txt','a')
 maxwordlength=40
 maxthreads=100
 count=0
+maxretry=10
 lock1=threading.RLock()
 lock2=threading.RLock()
 def searchsimsimi(keyword):
@@ -31,7 +32,7 @@ def searchsimsimi(keyword):
     request2.add_header("Referer","http://www.simsimi.com")
     t=0
     wordset=set()
-    while t<6:
+    while t<maxretry:
         try:
             t+=1
             result = urllib2.urlopen(request).read()
@@ -46,7 +47,7 @@ def searchsimsimi(keyword):
         except BaseException:
             pass
         finally:
-            if t>5:
+            if t>=maxretry:
                 print "error"+str(t)+"  :"+keyword
                 break
     #return wordset
