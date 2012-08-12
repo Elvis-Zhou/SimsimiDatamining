@@ -213,7 +213,7 @@ if __name__=='__main__':
     count=0
     while True:
         text=f.readline().strip()
-        if len(text)==0 and not threads:
+        if len(text)==0 and (count>0):
             for t in threads:
                 try:
                     t.start()
