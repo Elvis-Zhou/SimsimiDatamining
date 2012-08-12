@@ -214,10 +214,15 @@ if __name__=='__main__':
         text=f.readline().strip()
         if len(text)==0 and not threads:
             for t in threads:
-                t.start()
+                try:
+                    t.start()
+                except RuntimeError:
+                    print "threads had started"
             for t in threads:
                 t.join()
+                #threads.remove(t)
                 count-=1
+            threads=[]
             break
 
         if count<maxthreads:
@@ -226,11 +231,15 @@ if __name__=='__main__':
             count+=1
         if count>=maxthreads:
             for t in threads:
-                t.start()
+                try:
+                    t.start()
+                except RuntimeError:
+                    print "threads had started"
             for t in threads:
                 t.join()
+                #threads.remove(t)
                 count-=1
-
+            threads=[]
     print "finish"
     f.close()
     out.close()
