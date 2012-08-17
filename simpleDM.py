@@ -8,36 +8,33 @@ from jianfan import ftoj
 from Queue import Queue
 
 urllib2.socket.setdefaulttimeout(30)
-f=open('Ciku1.txt','r')
-out=open('Datamining1.txt','a')
-out2=open('Datamining1-long.txt','a')
+cookie="sagree=true; selected_nc=ch; JSESSIONID=A27B1B45016B6242EE7D3A9E829E91C6; __utma=119922954.1058608435.1343057253.1344838700.1344874176.3; __utmb=119922954.3.9.1344874201643; __utmc=119922954; __utmz=119922954.1343057253.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)"
+cookie2="sagree=true; selected_nc=ch; JSESSIONID=C6C18F376C2ED1D571B99F3BD50C7A1C; __utma=119922954.1058608435.1343057253.1344838700.1344874176.3; __utmb=119922954.4.9.1344874929222; __utmc=119922954; __utmz=119922954.1343057253.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)"
+filename="Ciku%s.txt"
+outfilename='Datamining%s.txt'
+outlongfilename='Datamining%s-long.txt'
+filecount=1
+f=open(filename % filecount,'r')
+out=open(outfilename % filecount,'a')
+out2=open(outlongfilename % filecount,'a')
 maxwordlength=40
-maxthreads=10
+maxthreads=20
 count=0
 maxretry=6
-treedeep=12
+#treedeep=1
 lock1=threading.RLock()
 lock2=threading.RLock()
 threads=Queue(maxthreads)
 def searchsimsimi(keyword):
-    #titles=[]
-    #values = {
-    #"msg":keyword
-    #}
-    #data = urllib.urlencode(values)
+
     url_ch='http://www.simsimi.com/func/req?lc=ch&msg='
     url_zh='http://www.simsimi.com/func/req?lc=zh&msg='
-    #keyword=urllib.urlencode(keyword,'utf-8')
     request = urllib2.Request(str(url_ch)+keyword)
     request2 = urllib2.Request(str(url_zh)+keyword)
-    #print keyword
     request.add_header("Referer","http://www.simsimi.com/talk.htm")
-    #    "Host","www.simsimi.com","Connection","keep-alive","X-Requested-With","XMLHttpRequest","User-Agent","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.75 Safari/537.1","Content-Type","application/json","charset","utf-8")
-    request.add_header("Cookie","sagree=true; selected_nc=ch; JSESSIONID=DE1FB3B8CEAF68EA0E5BBBC81640796B; __utma=119922954.219482817.1343627343.1343627343.1344858094.2; __utmb=119922954.3.9.1344858110502; __utmc=119922954; __utmz=119922954.1343627343.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none))")
-
+    request.add_header("Cookie",cookie)
     request2.add_header("Referer","http://www.simsimi.com/talk.htm")
-    request2.add_header("Cookie","sagree=true; selected_nc=ch; JSESSIONID=DE1FB3B8CEAF68EA0E5BBBC81640796B; __utma=119922954.219482817.1343627343.1343627343.1344858094.2; __utmb=119922954.3.9.1344858110502; __utmc=119922954; __utmz=119922954.1343627343.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none))")
-
+    request2.add_header("Cookie",cookie2)
     t=0
     wordset=set()
     while t<maxretry:
@@ -172,90 +169,74 @@ class DMthread(threading.Thread):
     global threads
     def __init__(self):
         threading.Thread.__init__(self)
-        self.wordset=set() #当前索引词的大集合
-        self.wordlist=set() #目前放进去词搜索产生的集合，也就是要接下来搜索
-        self.wordlist1=set() #临时存储2级结点生成的词典
-        self.wordlist2=set() #临时当前词simsimi返回生成的当前词典
-        self.i=0
+        self.wordset=set() #当前答案
         self.word=""
 
     def run(self):
-        self.i=0
+        #self.i=0
         self.word=threads.get(1,10)
-        self.wordlist.add(self.word)
+        try:
+            self.wordset=searchsimsimi(self.word)
+            if len(self.wordset)>0 :
+                if len(self.word.strip())<=maxwordlength:
+                    lock1.acquire()
+                    writetoaiml(self.word,self.wordset)
+                    lock1.release()
+                else:
+                    lock2.acquire()
+                    writetoaiml2(self.word,self.wordset)
+                    lock2.release()
+            else:
+                pass
+        except BaseException:
+            pass
 
-        while True:
-            self.wordlist1=self.wordlist.copy()
-            for word in self.wordlist:
-                self.wordlist1.remove(word)
-                #print word
-                #word="力量"
-                self.wordlist2=searchsimsimi(word.replace(' ','+'))
-                #print wordlist
-                if not len(self.wordlist2):
-                    break
-                if (self.wordset&self.wordlist2)==self.wordlist2:
-                    break
-                self.wordlist1|=self.wordlist2
-                if len(self.wordlist2)>0:
-                    self.wordset.add(word)
-                    if len(word.strip())<=maxwordlength:
-                        lock1.acquire()
-                        writetoaiml(word,self.wordlist2)
-                        lock1.release()
-                    else:
-                        lock2.acquire()
-                        writetoaiml2(word,self.wordlist2)
-                        lock2.release()
-            self.i += 1
-            self.wordset|=self.wordlist1
-            self.wordlist=set()|self.wordlist1
-            if not len(self.wordlist):
-                #threads.task_done()
-                break
-            if  self.i>=treedeep:
-                print "treedeep arrive:"+str(treedeep) + " break at keyword: "+self.word,"  "
-                print self.wordlist1
-                break
         threads.task_done()
 
 
 if __name__=='__main__':
-
+    #global f,out,out2,filename,filecount
+    for filecount in range(1,11):
+        f=open(filename % filecount,'r')
+        out=open(outfilename % filecount,'a')
+        out2=open(outlongfilename % filecount,'a')
     #count=0
-    while True:
-        text=f.readline().strip()
-        if len(text)==0 and (threads.qsize()>0):
-            k=threads.qsize()
-            for j in range(0,k):
-                try:
-                    t=DMthread()
-                    t.start()
-                except RuntimeError:
-                    print "threads had started "
-            threads.join()
-            #threads.remove(t)
-            #count=0
-        if len(text)==0 and (threads.qsize()==0):
-            break
+        while True:
+            text=f.readline().strip()
+            if len(text)==0 and (threads.qsize()>0):
+                k=threads.qsize()
+                for j in range(0,k):
+                    try:
+                        t=DMthread()
+                        t.start()
+                    except RuntimeError:
+                        print "threads had started "
+                threads.join()
+                #threads.remove(t)
+                #count=0
+            if len(text)==0 and (threads.qsize()==0):
+                break
 
-        if threads.qsize()<maxthreads:
-            #t=DMthread()
-            threads.put(text,1)
-            #count+=1
-        if threads.qsize()>=maxthreads:
-            k=threads.qsize()
-            for j in range(0,k):
-                try:
-                    t=DMthread()
-                    t.start()
-                    #threads.task_done()
-                except RuntimeError:
-                    print "threads had started "
-            threads.join()
-            #count=0
-            #threads=[]
-    print "finish"
-    f.close()
-    out.close()
+            if threads.qsize()<maxthreads:
+                #t=DMthread()
+                threads.put(text,1)
+                #count+=1
+            if threads.qsize()>=maxthreads:
+                k=threads.qsize()
+                for j in range(0,k):
+                    try:
+                        t=DMthread()
+                        t.start()
+                        #threads.task_done()
+                    except RuntimeError:
+                        print "threads had started "
+                threads.join()
+                #count=0
+                #threads=[]
+
+
+print "finish"
+f.close()
+out.close()
+out2.close()
 
